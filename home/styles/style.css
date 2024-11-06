@@ -1,0 +1,526 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*---------------------------------------------------------*/
+/* Estilos iniciais do botão */
+
+
+/* Centraliza o conteúdo flexbox, com alinhamento à direita */
+.login {
+
+    display: flex;
+    justify-content: flex-end;
+   position:absolute;
+   top: 0; /* ou bottom: 0; para colocar no canto inferior */
+   right: 0;
+
+}
+
+/*---------------------------------------------------------*/
+
+
+
+.containerhome {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os elementos */
+    align-items: flex-start; /* Alinha no topo */
+   
+    width: 100%;
+    background-color: rgba(65, 105, 225, 0.557); /* Cor terracota translúcida */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 12px;
+
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 9%;
+    margin-left: 15%;
+}
+
+.text {
+    max-width: 50%; /* Largura máxima do texto */
+    margin-right: 80px; /* Espaçamento à direita */
+}
+
+.text h2 {
+    margin: 0; /* Removendo margem superior e inferior */
+    color: #000000; /* Cor do texto do título */
+    font-size: 24px; 
+    font-weight: 800; /* Peso da fonte */
+    font-family: 'Poppins', sans-serif; /* Fonte usada */
+}
+
+.text p {
+    margin: 0; /* Removendo margem superior e inferior */
+    color: #ffffff; /* Cor do texto do parágrafo */
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: 'Poppins', sans-serif; /* Fonte usada */
+}
+
+
+.fundo {
+    max-width: 50%;
+    width: 100%;
+    margin-left: auto; /* Alinha à direita */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-field {
+    margin-bottom: 20px;
+    margin-top: 15px;
+    position: relative; /* Necessário para a posição do erro */
+}
+
+.form-field label {
+    margin-bottom: 5px;
+    display: block;
+    color: #ffffff;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.error {
+    color: #d9534f; /* Vermelho suave */
+    font-size: 12px;
+    display: none; /* Oculta o erro por padrão */
+    position: absolute; /* Posicionamento absoluto */
+    top: 100%; /* Logo abaixo do campo */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo para destacar o erro */
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-top: 5px; /* Espaço acima do erro */
+    white-space: nowrap; /* Evita quebra de linha */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra do erro */
+}
+/*Botão cadastre-se agora*/
+button.solid {
+    background-color: rgb(225, 185, 65); 
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.solid:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+/*Botão login*/
+button.clear {
+    background-color: rgb(225, 158, 65);
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button.clear:hover {
+    text-decoration: underline;
+}
+
+/*---------------------------------------------------------*/
+
+
+.sobrekanban {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 1s forwards;
+    margin-top: 10px;
+}
+
+
+.image {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    margin-left: 15%;
+    
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.imageesquerdo {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    
+ 
+    transition: transform 0.3s ease-in-out;
+}
+.textoesquerdo h2 {
+    font-size: 24px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    font-weight: bold; /* Negrito */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra do texto */
+    font-family: 'Poppins', sans-serif;
+}
+.textodireito h2 {
+    font-size: 24px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    font-weight: bold; /* Negrito */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra do texto */
+    font-family: 'Poppins', sans-serif;
+}
+
+.conteudo{
+    color: #000000;
+    font-size: 20px;
+
+
+}
+.image:hover {
+    transform: scale(1.05);
+}
+
+.imageesquerdo:hover {
+    transform: scale(1.05);
+}
+
+.textodireito {
+    max-width: 40%; /* Largura máxima do texto */
+    margin-right:20px; /* Espaçamento à esquerda */
+    font-size: 20px;
+    line-height: 1.8;
+    
+}
+
+.topico {
+    color: #000000a7;
+    font-weight: bold;
+}
+.textoesquerdo {
+    max-width: 100%; /* Largura máxima do texto */
+    margin-left:200px; /* Espaçamento à direita */
+    font-size: 20px;
+    line-height: 1.8;
+  
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*---------------------------------------------------------*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    
+    background-size: cover;
+    background-position: center;
+   
+    
+    /* Centralizar o conteúdo da página com Flexbox */
+  
+    justify-content: center;
+    align-items: center;
+
+    /* Garantir que o body ocupe toda a tela */
+    min-height: 100vh; /* Usa "vh" para altura mínima da janela */
+    width: 100%;
+    
+    z-index: 1;
+}
+
+
+.background-image {
+    /* Removendo a imagem de fundo */
+    /* background-image: url('../img/fundo.png'); */
+    
+    /* Adicionando um degradê suave */
+    background-image: url('../img/fundo.png'); /* Ajuste as cores conforme necessário */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+   /*  opacity: 0.5; /* Aplica 50% de opacidade ao fundo */
+}
+
+button {
+    padding: 10px;
+    background-color: #81a8ea;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+/*botão login*/
+button:hover {
+    background-color: rgb(225, 212, 65);; 
+}
+
+/* Estilos do elemento main */
+main {
+    padding: 30px;
+    user-select: none;
+}
+
+/* Estilos do header */
+header button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #e38585;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.testemodelo{
+    
+    align-items: center;
+
+}
+
+
+
+
+#menu {
+  position: relative;
+  z-index: 2; 
+}
+
+#menu1 {
+  background-color: #f4f4f4;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.conteudo {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sobre-mim__info--titulo {
+  font-size: 28px;
+  color: #333;
+}
+
+.texto--blue {
+  color: #6e241a;
+}
+
+.sobre-mim__info--para1 {
+  font-size: 16px;
+  color: #555;
+  margin-top: 20px;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sobre-mim {
+    background-color: #a74caf; /* Verde escuro */
+    color: #fff; /* Cor do texto branco */
+    padding: 40px 0;
+}
+
+h2, h3 {
+    color: #fff; /* Cor do texto branco */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+
+  /* Estilo básico para o container */
+  .row {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Estilo individual para cada card */
+.feature-center {
+    text-align: center;
+  
+   
+    padding: 20px;
+   
+    margin: 10px;
+    width: 100%;
+    max-width: 250px;
+}
+
+
+
+/* Estilo para o texto do contador */
+.counter-label {
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Estilo para os números do contador */
+.counter {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f1d1d;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .feature-center {
+        margin-bottom: 20px;
+    }
+}
+
+
+.dados {
+    background-color: rgba(65, 132, 225, 0.46); 
+
+}
+/*
+.dados {
+    background: linear-gradient(to bottom, #ffffff, #c6c2c1 50%, #ffffff);
+}*/
+
+
+/**aaaaaaaaaaaaaaaaa
+.portaCartao {
+  width: 480px;
+  height: 300px;
+  position: relative;
+  perspective: 1000px;
+  top: 50%; 
+  left: 50%;
+  margin-top: -150px; 
+  margin-left: -240px;
+}
+
+
+.cartao {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 500ms linear; 
+  box-shadow: -5px 5px 5px #aaa;
+  
+  transform: translate3d(0,0,0);
+}
+.portaCartao:hover .cartao {
+  transform: rotateY(180deg);
+  box-shadow: 5px 5px 5px #aaa;
+}
+
+.lado {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;       
+  transform: translate3d(0,0,0);
+  background-color: #efefef;
+  cursor: e-resize;
+}
+
+/* Inverte o lado do verso para que só apareça quando o cartão for virado*/
+/*
+.lado.verso {
+    transform: rotateY(180deg);
+    cursor: w-resize;
+  }
+  
+  
+  @keyframes girar {
+    0%, 40% {
+       transform: rotateY(0deg); 
+    }
+    50%, 90% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  
+  .cartao {
+    font-family: Arial;
+    font-size: 10px;
+    color: #666666; 
+  }
+  
+  .cartao .lado.frente {
+    text-align: center;
+     vertical-align: top; 
+  }
+  .cartao .lado.frente .info {
+    position: absolute;
+    line-height: 300px;
+    width: 100%;
+    height: 100%;
+  }
+  .cartao .lado.frente h1 {
+    font-size: 3em;
+  }
+  .cartao .lado.frente p {
+    font-size: 1.5em;
+    transform: translate3d(0,2em,0);
+  }
+  .cartao .lado.verso p {
+    
+    position: absolute;
+    font-size: 1.5em;
+    bottom: 1em;
+    left: 1em;
+  }
+  */

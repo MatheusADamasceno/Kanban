@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*footer{
+    background-image: "./";
+    padding: 50px 0;
+}*/
+
+footer {
+    background-image: url('../img/rodape.png');
+    background-size: 100%; /* Ajuste o valor conforme necessário (pode ser em porcentagem, pixels, etc.) */
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    background-position: center center; /* Centraliza a imagem no eixo horizontal e vertical */
+   
+}
+
+
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+    color: #415aca;
+    background-color: white;
+}
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #415aca;
+}
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #2a4037;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;   
+     
+}
+.colfooter .titleFooter   { 
+
+	font-family:'open_sansregular'; 
+	font-size:1.3em; 
+	color:#ffffff; 
+	padding-bottom: 0.5em; 
+	margin-bottom:0.5em; 
+	border-bottom:1px #4ec0db solid;
+}
+
+.botao{
+
+    padding: 10px 12px;
+    color: #fff;
+    font-family: 'open_sansregular';
+    letter-spacing:2px;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+    margin-right:7px;
+    
+  }
+  .botao::before {
+    
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #6098FF;
+    display: block;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+  }
+  .botao:hover::before {
+    
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1)
+  }
+  .botao{
+  
+      font-size:1em;
+      color:#ffffff;
+      text-align:center;
+      font-family:'open_sansregular';
+      
+      border-radius:3px;
+      overflow: hidden!important;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+      background: transparent!important;
+      z-index:10;
+     
+      
+  }
+  .botao:hover{
+  
+      border: 1px solid #262626;
+      color: #2adee3!important;
+  }
+  .botao::before {
+      content: '';
+      width: 0%;
+      height: 100%;
+      display: block;
+      background: #0035ba;
+      position: absolute;
+      -ms-transform: skewX(-15deg);
+      -webkit-transform: skewX(-15deg); 
+      transform: skewX(-15deg);   
+      left: -10%;
+      opacity: 1;
+      top: 0;
+      z-index: -12;
+      -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+      -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+      -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+      transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+      box-shadow:2px 0px 14px rgba(0,0,0,.6);
+  } 
+  .botao::after {
+   
+      content: '';
+      width: 0%;
+      height: 100%;
+      display: block;
+      background: #e2df2e;
+      position: absolute;
+      -ms-transform: skewX(-15deg);
+      -webkit-transform: skewX(-15deg); 
+      transform: skewX(-15deg);   
+      left: -10%;
+      opacity: 0;
+      top: 0;
+      z-index: -15;
+      -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+      -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+      -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+      transition: all .4s cubic-bezier(.2,.95,.57,.99);
+      box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+  }
+  .botao:hover::before, .botao:hover::before{
+     
+      opacity:1;
+      width: 120%;
+  
+  }
+  .botao:hover::after, .botao:hover::after{
+  
+      opacity:1;
+      width: 150%;
+  
+  }
+
+  .botao img {
+    width: 30px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Isso mantém a proporção original da imagem */
+}
+.main_footer_copy { background-color:#5894f469;
+     width:100%; 
+     float:left; 
+     text-align:center; 
+     padding:1.5em 0em; }
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+}

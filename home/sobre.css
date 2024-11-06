@@ -1,0 +1,28 @@
+
+
+.containersob {
+    display: flex;
+    max-width: 100%;
+    border: 1px solid #000000;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+    color: black;
+}
+
+.photo {
+    flex: 1;
+    overflow: hidden;
+}
+
+img {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px 15px 30px 10px; /* top, right, bottom, left */
+}

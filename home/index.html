@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="stylesheet" href="styles/nav-bar.css">
+    <link rel="stylesheet" href="styles/about-me.css">
+    <!--<link rel="stylesheet" href="styles/stack.css">--->
+ <link rel="stylesheet" href="styles/projects.css">
+  <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="sobre.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/rodape.css">
+    <link rel="stylesheet" href="styles/linha.css">
+    <script src="teste.js"></script>
+    
+   
+   
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+
+
+
+<script src="https://kit.fontawesome.com/72d571c62a.js" crossorigin="anonymous"></script>
+
+<title>home</title>
+</head>
+<body>
+    <div class="login">
+        <div class="login-btn">
+            <a href="./../index.html" class="clear">
+                <button type="button" class="clear">
+                    LOGIN
+                </button>
+            </a>
+        </div>
+    </div>
+    <section id="sobre-mim">
+        <div class="background-image">
+            <div class="logo-container">
+                <img class="logo" src="./img/mtss.png" alt="Logo Pessoal">
+            </div>
+            
+        </div>
+       
+        
+      
+        <div class="containerhome">
+            <div class="text">
+               <strong> <h2>Otimize Sua Equipe com Nosso Sistema.<br> </h2><br></strong>
+                <p>Cadastre-se em nossa plataforma de Kanban e transforme a maneira como sua equipe trabalha! 
+                    Com uma interface fácil de usar, nosso sistema ajuda a organizar,
+                     priorizar e acompanhar o progresso de projetos de forma intuitiva, 
+                     aumentando a produtividade e a eficiência do seu time.
+                     Junte-se a nós e comece a otimizar seu fluxo de trabalho hoje mesmo!</p>
+            </div>
+            <div class="fundo">
+                <form>
+                    <div class="form-field">
+                        <div><label>Email</label></div>
+                        <input type="email" placeholder="seu@email.com" onchange="onChangeEmail()" id="email"/>
+                        <div class="error" id="email-required-error">Email é obrigatório</div>
+                        <div class="error" id="email-invalid-error">Email é inválido</div>
+                    </div>
+                    <div class="form-field">
+                        <div><label>Senha</label></div>
+                        <input type="password" placeholder="Senha" id="password" onchange="onChangePassword()"/>
+                        <div class="error" id="password-required-error">Senha é obrigatório</div>
+                        <div class="error" id="password-min-length-error">Senha deve ter pelo menos 6 caracteres</div>
+                    </div>
+                    <div class="form-field">
+                        <div><label>Confirmar senha</label></div>
+                        <input type="password" placeholder="Confirmar senha" id="confirmPassword" onchange="onChangeConfirmPassword()"/>
+                        <div class="error" id="password-doesnt-match-error">Senha e Confirmar senha devem ser iguais</div>
+                    </div>
+                    <div>
+                        <button type="button" class="solid" disabled="true" onclick="register()" id="register-button">Cadastre-se Agora!</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        
+        
+       <!-- <link rel="stylesheet" href="./../global.css">
+        <link rel="stylesheet" href="./.././pages/register/register.css">-->
+        
+        <script src="./registerhome.js"></script>
+        <script src="./../validations.js"></script>
+        <script src="./../loading.js"></script>
+        
+        <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
+        <script src="./../firebase-init.js"></script>
+    </section>
+
+    
+
+<!--
+<section class="portaCartao">
+    
+        <div class="cartao">
+          <div class="lado frente">
+            <h1 class="info">Sobre a Elevate</h1>
+            <p class="info"></p>
+          </div>
+          <div class="lado verso">
+            <p>Matheus<br>
+                A *Elevate* é uma empresa dedicada a proporcionar soluções inovadoras
+                 e eficientes em consultoria e metodologia ágil, transformando a gestão
+                  de projetos para empresas de todos os portes. Nossa equipe é formada por
+                   profissionais qualificados, focados em fornecer estratégias personalizadas
+                    e ferramentas que facilitam o crescimento e aprimoramento contínuo de nossos
+                     clientes.</p>
+                </p>
+          </div>
+        </div>
+      
+
+    </section>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="sobrekanban">
+        <img src="./img/mtss.png" alt="Imagem Exemplo" class="image">
+        <div class="textodireito">
+            <h2>Transforme Seu Trabalho com a Elevate</h2>
+            <p class="conteudo">Na Elevate, somos apaixonados por otimizar processos e promover a eficiência.
+                 Especializados em Kanban, oferecemos soluções práticas e personalizadas que ajudam equipes a visualizar,
+                  organizar e priorizar suas tarefas de forma eficaz. Nossa missão é capacitar empresas a alcançarem seus objetivos com agilidade e clareza.
+                   Junte-se a nós e transforme a maneira como você trabalha!
+                </p>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    
+    <div class="sobrekanban">
+      
+        <div class="textoesquerdo">
+            <h2>Descubra o Potencial da Agilidade com Elevate</h2>
+            <p class="conteudo">  Você está pronto para transformar suas demandas e aumentar a eficiência da sua equipe? <br>Na Elevate, oferecemos soluções em metodologia ágil que podem:
+                <p class="topico">
+                💠 Agilizar suas demandas: Otimize o fluxo de trabalho e entregue resultados mais rapidamente.
+            </p>
+            <p class="topico">
+                💠 Elevar sua produtividade: Identifique gargalos e foque no que realmente importa.
+            </p>
+            <p class="topico">
+                💠 Fomentar a inovação: Crie um ambiente colaborativo e flexível para novas ideias.
+            </p>
+                Se você deseja impulsionar a agilidade da sua equipe, entre em contato conosco! Vamos voar alto juntos!
+            </p>
+        
+            </div>
+            <img src="./img/seta.gif" alt="Imagem Exemplo" class="imageesquerdo">
+              
+        </div>
+            <br><br><br><br>
+            <div class="sobrekanban">
+                <img src="./img/clique.gif" alt="Imagem Exemplo" class="image">
+                <div class="textodireito">
+                    <h2>Como usar o Quadro da Elevante?</h2>
+                    <p class="conteudo">Primeiro, faça login na sua conta para ter acesso. 
+                        Em seguida, basta dar um duplo clique na coluna onde deseja adicionar sua demanda e digitar a tarefa.
+                         À medida que for avançando, você pode arrastar a demanda entre as colunas para acompanhar facilmente
+                          o progresso</p>
+                
+                    </div>
+                        
+                   
+                    </div>
+
+
+
+
+
+
+  
+                    <section id="projetos">
+                        <div class="container1">
+                            <div class="row">
+                                  <ul class="lista__projetos">
+                
+                
+                                    <li class="projeto">
+                                        <div class="projeto__container">
+                
+                                            <img src="./img/quem somos.png" class="projeto__img"
+                                                alt="Projeto jogo do mario">
+                
+                                            <div class="projeto__descricao">
+                                                <h3 class="projeto__descricao--titulo">Quem somos </h3>
+                                                
+                                                <p class="projeto__descricao--para">A Elevate é uma plataforma de gestão de projetos ágil e eficiente,
+                                                     especializada no uso de Kanban para facilitar a organização e o fluxo de trabalho em equipes de todos
+                                                      os tamanhos. Nosso objetivo é proporcionar ferramentas intuitivas e acessíveis que otimizam o gerenciamento 
+                                                      de tarefas, colaborando para que equipes alcancem seu máximo potencial de forma visual e prática. Com a Elevate,
+                                                       empresas e profissionais podem visualizar processos, distribuir responsabilidades e manter o foco nas metas, tudo em um só lugar.</p>
+                                                
+                
+                                            </div>
+                
+                                        </div>
+                                    </li>
+                
+                
+                                    <li class="projeto">
+                                        <div class="projeto__container">
+                
+                                            <img src="./img/nossa historia.png" class="projeto__img" alt="Projeto jogo do mario">
+                
+                                            <div class="projeto__descricao">
+                                                <h3 class="projeto__descricao--titulo">Nossa História</h3>
+                                                
+                                                <p class="projeto__descricao--para">A Elevate nasceu da necessidade de transformar
+                                                     o gerenciamento de projetos em um processo fluido e acessível. Em 2020, nossos
+                                                      fundadores — especialistas em metodologia ágil e gestão de projetos — observaram 
+                                                      como as empresas lutavam para gerenciar fluxos de trabalho de maneira organizada
+                                                       e eficiente. Determinados a mudar esse cenário, eles desenvolveram uma plataforma 
+                                                       intuitiva, inspirada no Kanban, que coloca as necessidades das equipes em primeiro
+                                                        lugar. Hoje, a Elevate ajuda empresas em diversas indústrias a otimizar suas rotinas,
+                                                         aumentar a produtividade e, principalmente, 
+                                                    construir um ambiente de trabalho mais colaborativo e dinâmico..</p>
+                                               
+                                            </div>
+                                        </div>
+                
+                                    </li>
+                
+                                    <li class="projeto">
+                                        <div class="projeto__container">
+                
+                                            <img src="./img/nossa missao.png" class="projeto__img" alt="Projeto jogo do mario">
+                
+                                            <div class="projeto__descricao">
+                                                <h3 class="projeto__descricao--titulo">Nossa Missão</h3>
+                                                
+                                                <p class="projeto__descricao--para"> Nossa missão é capacitar equipes e organizações
+                                                     a atingir o seu melhor desempenho por meio de uma gestão de projetos clara, intuitiva
+                                                      e eficiente. Na Elevate, acreditamos que a simplicidade é o caminho para a produtividade,
+                                                       e buscamos oferecer uma plataforma que reduza a complexidade do gerenciamento de tarefas, 
+                                                       promovendo transparência e engajamento entre os membros da equipe. Trabalhamos diariamente 
+                                                       para que nossos clientes alcancem seus objetivos com eficiência, 
+                                                    transformando suas ideias em ações concretas.</p>
+                                            
+                                            </div>
+                                        </div>
+                                    </li>
+                
+                                    <li class="projeto">
+                                        <div class="projeto__container">
+                
+                                            <img src="./img/nossos valores.png" class="projeto__img" alt="Projeto jogo do mario">
+                
+                                            <div class="projeto__descricao">
+                                                <h3 class="projeto__descricao--titulo">Nossos Valores</h3>
+                                                
+                                                <p class="projeto__descricao--para">
+                                                    💠Inovação: Estamos constantemente em busca de novas maneiras de tornar o trabalho em equipe mais eficaz e dinâmico.<br>
+                                                    💠 Colaboração: Acreditamos que o sucesso é alcançado juntos. Nossa plataforma é desenhada para promover a colaboração entre os membros da equipe.<br>
+                                                    💠 Simplicidade: Valorizamos a clareza e a facilidade de uso, focando em recursos que realmente façam a diferença.<br>
+                                                    💠Compromisso com o Cliente: Ouvimos e atendemos nossos clientes com dedicação, oferecendo suporte e melhorias contínuas para atender suas necessidades.<br>
+                                                    💠Transparência: Acreditamos que o sucesso do trabalho está na transparência das informações e no alinhamento das equipes, permitindo que todos acompanhem o progresso. </p>
+                                            
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                               
+                
+                
+                
+                <script>
+                    let currentIndex = 0;
+                    const projects = document.querySelectorAll('.project');
+                    const totalProjects = projects.length;
+                  
+                    function showProject(index) {
+                      const newPosition = -index * 100 + '%';
+                      document.querySelector('.gallery').style.transform = 'translateX(' + newPosition + ')';
+                    }
+                  
+                    function nextProject() {
+                      currentIndex = (currentIndex + 1) % totalProjects;
+                      showProject(currentIndex);
+                    }
+                  
+                    function prevProject() {
+                      currentIndex = (currentIndex - 1 + totalProjects) % totalProjects;
+                      showProject(currentIndex);
+                    }
+                  </script>
+                
+                
+            </section>
+
+
+
+
+
+
+<div class="dados">
+
+<div class="row">
+    <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+        <div class="feature-center">
+            <span class="counter-label">Clientes<br></span>
+            <span class="counter js-counter" data-from="0" data-to="587" data-speed="5000" data-refresh-interval="50">540</span>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+        <div class="feature-center">
+            <span class="counter-label">Total de funcionário<br></span>
+            <span class="counter js-counter" data-from="0" data-to="1" data-speed="5000" data-refresh-interval="50">100</span>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+        <div class="feature-center">
+            <span class="counter-label">Taxa de satisfação</span><br>
+            <span class="counter js-counter" data-from="0" data-to="100" data-speed="5000" data-refresh-interval="50">0</span><span class="counter js-counter">%</span>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+        <div class="feature-center">
+            <span class="counter-label">Desde<br></span>
+            <span class="counter js-counter" data-from="0" data-to="2024" data-speed="5000" data-refresh-interval="50">2000</span>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Função de contagem animada
+        function startCounting($element) {
+            var countTo = $element.attr('data-to'),
+                duration = $element.attr('data-speed');
+
+            $({ countNum: $element.text() }).animate({
+                countNum: countTo
+            },
+            {
+                duration: parseInt(duration),
+                easing: 'linear',
+                step: function () {
+                    $element.text(Math.floor(this.countNum));
+                },
+                complete: function () {
+                    $element.text(this.countNum);
+                }
+            });
+        }
+
+        // Configuração do Intersection Observer
+        let options = {
+            root: null, // Usa o viewport como root
+            rootMargin: '0px',
+            threshold: 0.5 // Ativa quando 50% do elemento estiver visível
+        };
+
+        // Função que será chamada quando o elemento entrar em visão
+        let observerCallback = function (entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    let $element = $(entry.target);
+                    if (!$element.hasClass('counted')) {
+                        startCounting($element);
+                        $element.addClass('counted'); // Evita que conte mais de uma vez
+                    }
+                }
+            });
+        };
+
+        let observer = new IntersectionObserver(observerCallback, options);
+
+        // Observa todos os contadores na página
+        $('.js-counter').each(function () {
+            observer.observe(this);
+        });
+    });
+</script>
+
+
+                    
+                    
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="header">
+        <h1 class="Google">Google Reviews</h1>
+        
+    
+    </div>
+
+    <div class="timeline">
+    
+        <div class="carousel carousel-main" data-flickity='{}'>
+            
+            <div class="img-wrapper">
+                <div class="img-wrapper"><img src="img/1.png"></div>
+                <time datetime="1985-09"></time>
+                
+    
+            </div>
+      
+       
+            <div class="img-wrapper"><time datetime="1988-10"></time>
+                <div class="img-wrapper"><img src="img/2.png" ></div>
+            </div>
+     
+            <div class="img-wrapper"><time datetime="1989-04"></time>
+                <div class="img-wrapper"><img src="img/3.png"></div>
+            </div>
+    
+            
+            <div class="img-wrapper"><time datetime="1990-02"></time>
+                <div class="img-wrapper"><img src="img/4.png"></div>
+            </div>
+    
+            <div class="img-wrapper"><time datetime="1991-08"></time>
+                <div class="img-wrapper"><img src="img/5.png"></div>
+            </div>
+    
+            <div class="img-wrapper"><time datetime="1992-11"></time>
+                <div class="img-wrapper"><img src="img/6.png"></div>
+            </div>
+            <div class="img-wrapper"><time datetime="1996-09"></time>
+                <div class="img-wrapper"><img src="img/7.png "></div>
+            </div>
+            <div class="img-wrapper"><time datetime="2002-07"></time>
+                <div class="img-wrapper"><img src="img/8.png"></div>
+            </div>
+            <div class="img-wrapper"><time datetime="2006-05"></time>
+                <div class="img-wrapper"><img src="img/9.png"></div>
+            </div>
+            <div class="img-wrapper"><time datetime="2007-05"></time>
+                <div class="img-wrapper"><img src="img/10.png"></div>
+            </div>
+            <div class="img-wrapper"><time datetime="2009-11"></time>
+                <div class="img-wrapper"><img src="img/11.png"></div>
+            </div>
+            <div class="img-wrapper"><time datetime="2010-05"></time>
+                <div class="img-wrapper"><img src="img/12.png"></div>
+            </div>
+            <div class="img-wrapper"><time datetime="2011-11"></time>
+                <div class="img-wrapper"><img src="img/13.png"></div>
+            </div>
+            
+        </div>
+    </div>
+    
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js'></script>
+
+
+ 
+  
+                </ul>
+
+            </div>
+        </div>
+
+   
+
+
+ 
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <!-- footer col-->
+                <div class="footer-col">
+                    <br><br>
+                    <h4 >Menus</h4>
+                    <ul>
+                        <li><a href="./../index.html"> Login </a></li>
+                        <li><a href="./../pages/register/register.html"> Cadastrar</a></li>
+                    
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <br><br>
+                    <h4 >Links Uteis</h4>
+                    <ul>
+                        <li><a href="https://www.aela.io/pt-br/blog/conteudos/kanban-visualizar-o-trabalho-para-otimizar-o-processo" target="_blank">O que é kanban?</a></li>
+                        <li><a href="https://www.atlassian.com/br/agile/scrum" target="_blank">O que é Scrum?</a></li>
+                        <li><a href="https://kodus.io/estrategias-para-otimizar-o-ciclo-de-desenvolvimento-de-software/" target="_blank">Otimização do desenvolvimento de software</h5></a></li>
+                     
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <br><br>
+                    <h4 >Local </h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span> Campo Grande -   MS</span>
+                            </div>
+
+                        </div>
+                       <!-- <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                                <span>matheusalvesdamascenotwd@gmail.com</span>
+                            </div>
+
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-phone"></i>
+                                <span>(62) 9 9206-0399 </span>
+                            </div>
+
+                        </div>-->
+
+
+                    </div>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    
+                    
+
+                    <div class="colfooter">
+                        <br><br>
+       
+                        <h4 > Redes Sociais</h4>
+                         
+                        <a href="https://www.instagram.com/matheus_damasceno17/"  target="_blank" class="botao">
+                            <img src="./img/i.png" alt="Facebook">
+                        </a>
+                        
+                        <a href="www.linkedin.com/in/matheusalvesdamasceno" target="_blank" class="botao">
+                            <img src="./img/l.png" alt="Instagram">
+                        </a>
+                        
+                        <a href="https://github.com/MatheusADamasceno" target="_blank" class="botao">
+                            <img src="./img/g.png" alt="Twitter">
+                        </a>
+                        
+                        <a href="https://mail.google.com/mail/?authuser=1&ogbl" target="_blank" class="botao">
+                            <img src="./img/m.png" alt="Pinterest">
+                        </a>         
+             
+                     </div><!--Col Footer 3-->
+
+                </div>
+                <!--end footer col-->
+                <div class="main_footer_copy">
+    
+                    <p class="m-b-footer"> Copyright © 2024 – Todos os Direitos Reservados.</p> 
+                    <p class="by"><i class="icon icon-heart-3"></i> Desenvolvido por: Matheus Alves</a></p>
+                
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--                               RODAPE                                         -->
+
+</body>
+
+</html>

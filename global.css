@@ -1,0 +1,102 @@
+
+
+
+.fundo {
+    color: rgb(255, 255, 255);
+    background-color: #1a1a1a; /* Fundo escuro para destacar a cor do texto */
+    padding: 20px; /* Espaçamento interno para dar um respiro ao conteúdo */
+    border-radius: 10px; /* Bordas arredondadas para um visual suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Sombras para criar profundidade */
+    text-align: center; /* Centralizar o conteúdo */
+    font-family: 'Arial', sans-serif; /* Fonte moderna e limpa */
+    transition: transform 0.3s ease-in-out; /* Animação suave para interações */
+
+}
+
+.fundo:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.22); /* Aumenta a sombra ao passar o mouse */
+}
+
+body {
+    background: linear-gradient(270deg, rgb(93, 173, 226), rgb(72, 201, 176), rgb(46, 204, 113),rgb(142, 68, 173));
+    background-size: 800% 800%; 
+    animation: gradientBackground 15s ease infinite; 
+    height: 100vh;
+    font-family: "Nova Amsterdã", sans-serif;
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+input,
+button {
+   padding: 10px;
+   width: -webkit-fill-available;
+}
+
+.loading {
+    background: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.loading label {
+    font-size: 24px;
+}
+
+button {
+    cursor: pointer;
+}
+button:active {
+    opacity: 0.8;
+}
+button[disabled] {
+    opacity: 0.8;
+}
+
+.clear {
+    background: transparent;
+    border: none;
+    color: white;
+}
+.solid {
+    background: white;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.outline {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.error {
+    background: rgba(255, 0, 0, 0.655);
+    color: white;
+    display: none;
+
+} 

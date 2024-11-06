@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+
+
+form {
+    width: 300px;
+}
+input {
+    border: none;
+}
+button {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+.fundo {
+    color: rgb(255, 255, 255);
+    background-image: url('./img/um-fundo-de-padrao-abstrato-amarelo-e-azul_730743-3252.avif'); /* Fundo escuro para destacar a cor do texto */
+    padding: 20px; /* Espaçamento interno para dar um respiro ao conteúdo */
+    border-radius: 10px; /* Bordas arredondadas para um visual suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Sombras para criar profundidade */
+    text-align: center; /* Centralizar o conteúdo */
+    font-family: 'Arial', sans-serif; /* Fonte moderna e limpa */
+    transition: transform 0.3s ease-in-out; /* Animação suave para interações */
+
+}
+
+.fundo:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.22); /* Aumenta a sombra ao passar o mouse */
+}
+body {
+    background: linear-gradient(270deg, rgb(65, 105, 225), rgb(65, 132, 225), rgb(14, 67, 191), rgb(0, 32, 130));
+    background-size: 400% 400%;
+    height: 100vh;
+    font-family: "Nova Amsterdã", sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Para evitar rolagem de tela */
+    position: relative; /* Necessário para posicionamento dos efeitos */
+    animation: colorShift 15s ease-in-out infinite;
+}
+
+
+@keyframes colorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), transparent);
+    animation: pulseLight 10s ease-in-out infinite;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Para não interferir com cliques */
+}
+
+@keyframes pulseLight {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.3);
+        opacity: 0.6;
+    }
+}
+
+
+
+
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+input,
+button {
+   padding: 10px;
+   width: -webkit-fill-available;
+}
+
+.loading {
+    background: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.loading label {
+    font-size: 24px;
+}
+
+button {
+    cursor: pointer;
+}
+button:active {
+    opacity: 0.8;
+}
+button[disabled] {
+    opacity: 0.8;
+}
+
+.clear {
+    background: transparent;
+    border: none;
+    color: white;
+}
+.solid {
+    background: white;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.outline {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.error {
+    background: rgba(255, 0, 0, 0.655);
+    color: white;
+    display: none;
+    border-radius: 5px;
+
+} 
+
+
+

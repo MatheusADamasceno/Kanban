@@ -1,0 +1,183 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nova Amsterdam", sans-serif; 
+}
+
+body {
+    background-image: url('../../img/wallpaper-azul-papel-de-parede-azul-fundo-13.jpg');
+    margin: 0;
+    padding: 20px;
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+}
+
+.horizontal-table {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0; /* Remover o espaçamento entre os elementos */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    text-align: right; /* Alinha o texto à direita dentro do contêiner */
+    font-family: Arial, sans-serif;
+    position: absolute; /* Permite o posicionamento fixo */
+    right: 20px; /* Distância da borda direita da página */
+    top: 80px; /* Distância do topo da página */
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(65, 132, 225);
+    padding: 1px; /* Reduz o espaçamento interno */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    margin: 0; /* Remove o espaçamento entre as colunas */
+}
+
+
+.cell.label {
+    font-weight: bold;
+    color: #04296b;
+    margin-bottom: 5px;
+}
+
+.cell.value {
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+}
+
+
+/* Controles */
+#controls {
+    display: flex;
+    gap: 10px;
+}
+button.clear {
+    background-color: rgb(225, 158, 65);
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+   position:absolute;
+   top: 0; 
+   right: 65px;
+
+}
+button {
+    padding: 10px;
+    background-color: #81a8ea;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+
+}
+
+button:hover {
+    background-color: rgb(213, 125, 0);
+}
+
+/* Estilos do elemento main */
+main {
+    padding: 30px;
+    user-select: none;
+}
+
+/* Estilos do header */
+header button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(225, 158, 65);
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+header > span {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #6b778c;
+    letter-spacing: 0.02rem;
+}
+
+header > h1 {
+    color: #182b4d;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* Estilos das colunas */
+.columns {
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.column {
+    width: 100%;
+    background-color: rgb(225, 158, 65);
+    height: 100vh; /* Corrigido de 100dvh para 100vh */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Removido duplicação */
+}
+
+.column__title {
+    color:#ffffef;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 28px;
+}
+
+.column__cards {
+    padding: 4px;
+    height: 100%;
+    border-radius: 5px;
+    background-image: url('../../img/12.avif');
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+
+/* Estilos dos cards */
+.card {
+    width: 100%;
+    min-height: 70px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #dfe1e6;
+    box-shadow: 0 2px 2px #000000;
+    padding: 12px 14px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #001b4b;
+    margin-bottom: 5px;
+}
+
+/* Estilos de contagem */
+.count {
+    font-size: 14px;
+    text-align: center;
+    color: #04296b;
+}
+
+/* Estilos para destaque da coluna */
+.column--highlight {
+    background-color: #deebff;
+    opacity: 50%;
+    border-radius: 2px;
+    border: 1px solid #f70000;
+}
