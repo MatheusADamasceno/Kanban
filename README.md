@@ -16,7 +16,7 @@ Misturei duas das minhas maiores paixões: jogos de cartas e séries. Criei um j
 ## Visualizar o Projeto
 Você pode visualizar o projeto clicando no link abaixo:
 
-[Link]( https://memoriacard.netlify.app )
+[Elevate]( https://kanbanelevate.netlify.app/home/index.html )
 
 
 ---
@@ -26,6 +26,7 @@ Você pode visualizar o projeto clicando no link abaixo:
 ![HTML]( https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
 ![CSS]( https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)  
 ![JavaScript]( https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
+![firebase](https://img.shields.io/badge/Firebase-F29D0C?style=for-the-badge&logo=firebase&logoColor=white)
 </div>
 <div alinhar="direita">
 
