@@ -1,23 +1,54 @@
-* Youtube: <a href="https://www.youtube.com/channel/UCtTfS4ffNNNhGoXzAdklwtQ" target="_blank">Paulo Alves Dev</a>
-* Discord: <a href="https://discord.gg/yy2kFbgg2J">Convite</a>
+## Bem vindo<p>
+Misturei duas das minhas maiores paixões: jogos de cartas e séries. Criei um jogo da memória com HTML, CSS e JavaScript, utilizando as temáticas de uma das minhas séries favoritas. Com ele, você pode escolher um nome de usuário e o nível de dificuldade da partida. Se o tempo se esgotar, é game over. As cartas são viradas, e a partida é encerrada.
 
-# Sobre o Projeto como um todo:
+<div align="center">
 
-A ideia desse projeto é criar a mesma aplicação utilizando várias tecnologias diferentes. O que vamos criar é uma aplicação de controle de gastos com login com email e senha, cadastro de usuário e um CRUD (Criar, Ler, Atualizar e Remover) de receitas e despesas.
+![Captura de tela - Mario Game](https://github.com/MatheusADamasceno/Jogo-da-Memoria/blob/main/Jogo%20da%20memoria/memoria.PNG?raw=true)
+</div>
 
-# Como acompanhar o desenvolvimento:
+<div alinhar="centro">
 
-Você pode acompanhar o desenvolvimento desse projeto no meu canal do Youtube chamado <a href="https://www.youtube.com/channel/UCtTfS4ffNNNhGoXzAdklwtQ" target="_blank">Paulo Alves Dev</a>. Cada branch no repositório faz referência a um dos vídeos da playlist de HTML, CSS e Javascript.
+[Meu Portfólio Completo](https://matheusprojectss.netlify.app)
 
-A branch master contém tudo o que foi desenvolvido no projeto até aqui. Cada passo projeto está separado em uma branch diferente.
+</div>
 
-# Tecnologias utilizadas nesse repositório
 
-* FRONTEND: HTML, Javascript e CSS puros
-* BACKEND: NodeJs
-* AUTENTICACAO: Firebase authentication
-* BANCO DE DADOS: Firebase firestore
+## Visualizar o Projeto
+Você pode visualizar o projeto clicando no link abaixo:
 
-# Como executar o projeto
+[Link]( https://memoriacard.netlify.app )
 
-Basta clonar/baixar o projeto pra tua máquina e abrir o arquivo index.html que se encontra na pasta raiz.
+
+---
+<div id="tecnologias-utilizadas">
+
+## Tecnologias usadas no projeto:
+![HTML]( https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
+![CSS]( https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)  
+![JavaScript]( https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
+</div>
+<div alinhar="direita">
+
+
+</div>
+
+---
+<div id="contato">
+
+<div id="contato">
+
+## Contato:
+### Matheus Damasceno
+Alguns meios de contato:
+<div>
+<a href="https://wa.me/5562992060399" target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" target="_blank"></a>
+<a href = "mailto:matheusalvesdamascenotwd@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+<a href="www.linkedin.com/in/matheusalvesdamasceno" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>   
+</div>
+</div>
+
+
+
+Fique à vontade para explorar os projetos, abrir questões ou sugerir melhorias. Seu feedback é valioso!
+
+Obrigado por visitar meu repositório pessoal! Espero que encontre algo que desperte seu interesse. 😊
