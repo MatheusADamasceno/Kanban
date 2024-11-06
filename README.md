@@ -1,5 +1,9 @@
 ## Bem vindo<p>
-Misturei duas das minhas maiores paixões: jogos de cartas e séries. Criei um jogo da memória com HTML, CSS e JavaScript, utilizando as temáticas de uma das minhas séries favoritas. Com ele, você pode escolher um nome de usuário e o nível de dificuldade da partida. Se o tempo se esgotar, é game over. As cartas são viradas, e a partida é encerrada.
+A ElevateKanban é um projeto pessoal que desenvolvi para aprimorar minhas habilidades como desenvolvedor. Trata-se de uma ferramenta de gerenciamento de tarefas baseada na metodologia Kanban, que permite aos usuários organizar seus fluxos de trabalho de maneira prática e intuitiva.
+
+A aplicação utiliza login e senha para garantir a segurança e a personalização da experiência de cada usuário. Os dados são salvos de forma segura no Firebase, o que garante acessibilidade e confiabilidade.
+
+Além de ser uma ferramenta útil para o dia a dia, ela também pode ser utilizada para planejar e organizar sprints semanais, facilitando a gestão de projetos de forma ágil e dinâmica. Essa flexibilidade torna a Elevate uma ótima opção tanto para desenvolvedores quanto para equipes que buscam aumentar a produtividade e o controle das tarefas.
 
 <div align="center">
 
